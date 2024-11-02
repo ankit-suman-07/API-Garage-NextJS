@@ -20,14 +20,13 @@ const Response = () => {
   })
   return (
     <div>
+      <span>Time Taken : {time.toFixed(2)} ms</span>
+            <span>Response Size : {size} kb</span>
+            <span>Status: {status} {statusName}</span>
+            <span>Response:</span>
       {
         response && (
-          <div>
-            {/* <h4>Time Taken : {time.toFixed(2)} ms</h4>
-            <h4>Response Size : {size} kb</h4>
-            <h4>Status: {status} {statusName}</h4>
-            <h3>Response:</h3>
-            <pre>{JSON.stringify(response, null, 2)}</pre> */}
+          <div className='response-outer' >
             <ReactJson src={response} />
           </div>
         )

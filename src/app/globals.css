@@ -1,0 +1,10 @@
+.response-outer {
+    border: 2px solid red;
+    bottom: 0;
+        width: calc(100% - 30px);        /* Set your desired width */
+        height: 400px;       /* Set your desired height */
+        overflow-y: auto;    /* Enable vertical scrolling */
+        border: 1px solid #ccc; /* Optional: add a border for visibility */
+        padding: 10px;       /* Optional: add padding */
+      
+}
